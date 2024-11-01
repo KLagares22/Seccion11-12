@@ -45,10 +45,31 @@ function Descto(descuento) {
     document.getElementById("descuento").textContent += "Total a pagar: " + totalPagar;
 }
 
-function Contraseña() {
-    cc=1234;
+function Contraseña(contraseña) {
+    const cc=1234;
+    let intento
     do {
-        document.getElementById("contraseña").textContent = "Contraseña Incorrecta, Intente de nuevo";
-    } while (cc!=1234);
+        intento= prompt("Ingrese contraseña")
+        document.getElementById("contraseña").textContent ="Contraseña Exitosa";
+
+    } while (intento!= cc);
 }
-    
+
+function Arreglo(){
+    let arreglo = [1,2,3,4,5,6,7,8,9];
+    let suma = 0;
+    for (let i = 0; i < arreglo.length; i++) {
+        suma += arreglo[i];
+        document.getElementById("arreglo").textContent = arreglo;
+        }
+        document.getElementById("arreglo").textContent += "\nSuma: " + suma;
+}
+function PedirNumero(){
+    let num = parseInt(prompt("Ingrese un número (Negativo para salir)"));
+
+    while (num >= 0) {
+        document.getElementById("bucle").textContent += num + " ";
+        num = parseInt(prompt("Ingrese un número (Negativo para salir)")); 
+    }
+    document.getElementById("bucle").textContent += "\nSaliste del bucle.";
+}

@@ -1,46 +1,75 @@
 <!DOCTYPE html>
 <html lang="es">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seccion11-12</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
+<header><h1>Laboratorio Talento Tech</h1></header>
 
-<body>
-    <div class="ejercicio1">
-        <input type="text" id="num1" placeholder="Ingrese calificacion">
-        <button onclick="calificacion('cali')">Verificar</button>
-        <h2 id="resultado"></h2>
-    </div>
-    <br>
-    <div class="ejercicio2">
-        <input type="text" id="num2" placeholder="Ingrese un número">
-        <button onclick="ParInpar('nume')">Ver</button>
-        <h2 id="ver"></h2>
-    </div>
-    <br>
-    <div class="ejercico3">
-        <input type="text" id="num3" placeholder="Ingrese monto total de compra">
-        <button onclick="Descto('descuento')">Ver descuento</button>
-        <h2 id="descuento"></h2>
-    </div>
-    
-    <br>
 
-    <div class="ejercicio4">
-        <input type="text" id="num4" placeholder="Intente adivinar el numero 1- 10">
-        <button onclick="Adivininanza('adivina')">Intentar</button>
-        <h2 id="adivinanza"></h2>
-    </div>
+<div class="ejercicio1">
+    <input type="text" id="num1" placeholder="Ingrese calificacion">
+    <button onclick="calificacion('cali')">Verificar</button>
+    <h2 id="resultado"></h2>
+</div>
+<br>
+<div class="ejercicio2">
+    <input type="text" id="num2" placeholder="Ingrese un  par o impar">
+    <button onclick="ParInpar('nume')">Ver</button>
+    <h2 id="ver"></h2>
+</div>
+<br>
+<div class="ejercico3">
+    <input type="text" id="num3" placeholder="Ingrese monto total de compra">
+    <button onclick="Descto('descuento')">Ver descuento</button>
+    <h2 id="descuento"></h2>
+</div>
+
+<br>
+
+<div class="ejercicio4">
+    <input type="text" id="num4" placeholder="Intente adivinar el numero 1- 10">
+    <button onclick="Adivininanza('adivina')">Intentar</button>
+    <h2 id="adivinanza"></h2>
+</div>
+<div class="seccion">
     <p>Sección 12</p>
-    <div class="Buclefor">
-        <input type="text" id="contraseña" placeholder="Ingrese su contraseña">
-        <button onclick="Contraseña()">Ingresar</button>
-        <h2 id="contraseña"></h2>
-    </div>
-
-    <script src="scripts/index.js"></script>
+</div>
+<div class="Buclefor">
+    <button onclick="Contraseña('contraseña')">Ingresar Contraseña</button>
+    <h2 id="contraseña"></h2>
+    <!-- Respuesta: en este caso utilizamos el bucle "Dowhile", debido
+         a que se requiere que ejecute el codigo por lo menos una vez para 
+         ingresar y verificar la cotraseña -->
+</div>
+<div class="Arreglo">
+    <button onclick="Arreglo('arreglo')">Calcular Arreglo</button>
+    <h2 id="arreglo"></h2>
+    <!-- Respuesta: Modificacion par obtener elpromedio
+         let total = 0;
+        for (let i = 0; i < arreglo.length; i++) {
+        total += arreglo[i];
+        }
+        let promedio = total / arreglo.length;
+        y mostar el resultado -->
+</div>
+<div class="Negativo">
+    <button onclick="PedirNumero('numero')">Bucle</button>
+    <h2 id="bucle"></h2>
+    <!--Al ingresar negativo no se ejecutara el bucle while
+    sino que mostrara mensaje  indicando que salio del bucle 
+     -->
+</div>
+<script src="scripts/index.js"></script>
+<footer>
+    <p>©Keith Lagares Ramírez</p>
+</footer>
+   
+</footer>
 </body>
 
 </html>
